@@ -204,3 +204,5 @@ client.on("error", (e) => {
     client.login(config.token);
 });
 client.login(config.token);
+
+bot.login(process.env.token);
