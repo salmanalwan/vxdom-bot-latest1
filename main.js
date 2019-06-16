@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const config = require("./config/config.json");
 const prefix = config.prefix;
 const fs = require("fs");
+const token = process.env.arcadia
 
 client.on('ready', () => {
     client.user.setActivity("for "+config.prefix+"help", {type: 3});
